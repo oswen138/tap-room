@@ -1,34 +1,43 @@
 import React from "react";
 import { v4 } from 'uuid';
 
-function NewKegForm(props){
+function NewKegForm(){
 
-  function handleNewTicketFormSubmission(event) {
+  function handleNewKegFormSubmission(event) {
     event.preventDefault();
-    console.log(event.target.names.value);
-    console.log(event.target.location.value);
-    console.log(event.target.issue.value);
+    console.log(event.target.name.value);
+    console.log(event.target.brand.value);
+    console.log(event.target.price.value);
+    console.log(event.target.alcoholContent.value);
+    console.log(event.target.flavor.value);
   }
 
 
   return (
     <React.Fragment>
-      <form onSubmit={handleNewTicketFormSubmission}>
+      <form onSubmit={handleNewKegFormSubmission}>
         <input
           type='text'
-          name='names'
-          placeholder='Pair Names' />
+          name='name'
+          placeholder='Keg Name' />
         <input
           type='text'
-          name='location'
-          placeholder='Location' />
-        <textarea
-          name='issue'
-          placeholder='Describe your issue.' />
-        <button type='submit'>Help!</button>
+          name='brand'
+          placeholder='Brand' />
+        <input
+          type='number'
+          name='price'
+          placeholder='Price' />
+        <input
+          type='text'
+          name='alcoholContent'
+          placeholder='abv' />
+        <button type='submit'>Add newly designed keg</button>
       </form>
     </React.Fragment>
   );
 }
 
 export default NewKegForm;
+
+
