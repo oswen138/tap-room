@@ -28,5 +28,18 @@ You will also see any lint errors in the console.
 
 ![](src/img/tap-room-components.png)
 
+## Known Bugs
+* No known bugs at this time.
+
+## Technologies Used
+* Javascript
+  * React
+  * Webpack
+* HTML
+* CSS
+
+### License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Copyright (c) 2020 Ophelia Swen
