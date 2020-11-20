@@ -3,21 +3,23 @@ import Keg from './Keg';
 
 const masterKegList = [
   {
-    name: 'Thato and Haley',
-    brand: '3A',
-    alcoholContent: 'Firebase won\'t save record. Halp.'
-    alcoholContent: 'Firebase won\'t save record. Halp.'
+    name: 'BerryBloom',
+    brand: 'PineHouse',
+    alcoholContent: '2.5%',
+    flavor: 'Blueberry Jasmine'
 
   },
   {
-    names: 'Sleater and Kinney',
-    location: '4B',
-    issue: 'Prop types are throwing an error.'
+    names: 'Citrus',
+    brand: 'PineHouse',
+    alcoholContent: '2.5%',
+    flavor: 'Orange, Grapefruit, Ginger'
   },
   {
-    names: 'Imani & Jacob',
-    location: '9F',
-    issue: 'Child component isn\'t rendering.'
+    names: 'PassionBerry',
+    brand: 'PineHouse',
+    alcoholContent: '2.5%',
+    flavor: 'Passionfruit, Strawberry'
   }
 ];
 
@@ -38,4 +40,4 @@ function KegList(){
       )}
     </React.Fragment>
   );
-
+}
