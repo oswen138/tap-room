@@ -1,5 +1,6 @@
 import React from 'react';
 import Keg from './Keg';
+import PropTypes from "prop-types";
 
 // remove const masterKegList = [
 //   {
@@ -42,7 +43,8 @@ function KegList(props) {
 }
 
 KegList.propTypes = {
-  kegList: PropTypes.array
+  kegList: PropTypes.array,
+  onSellingPint: PropTypes.func
 };
 
 export default KegList;

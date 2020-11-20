@@ -11,7 +11,7 @@ This web application is designed to enable user to track their kegs and show a l
 - Clone or download project files from https://github.com/oswen138/tap-room.git  
 - Run \$npm install from root directory to install essential packages   
 - Run \$npm start to open project on local server
-- Run project on localhost:8080 on your browser of choice
+- Run project on localhost:3000 on your browser of choice
 
 
 In the project directory, you can also run:
