@@ -49,5 +49,3 @@ KegList.propTypes = {
 
 export default KegList;
 
-
-jjhjhjhjhjhjh

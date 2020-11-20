@@ -9,6 +9,7 @@ class KegControl extends React.Component {
     this.state = {
       formVisibleOnPage: false,
       masterKegList: []
+      selectedKeg: null
     };
   }
 
