@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Kari's Kombucha Tap
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -71,3 +71,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 change up
+
+![](src/img/tap-room-components.png)
