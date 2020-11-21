@@ -9,7 +9,6 @@ function NewKegForm(props){
     props.onNewKegCreation({name: event.target.name.value, brand: event.target.brand.value, price: event.target.price.value, alcoholContent: event.target.alcoholContent.value, flavor: event.target.flavor.value, id: v4()});
   }
 
-
   return (
     <React.Fragment>
       <form onSubmit={handleNewKegFormSubmission}>

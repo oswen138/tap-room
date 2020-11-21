@@ -8,6 +8,7 @@ function KegDetail(props){
     <React.Fragment>
       <h1>Keg Detail</h1>
       <h3>{keg.name} - {keg.flavor}</h3>
+      <button onClick={ props.onClickingEdit }>Update Keg</button>
       <button onClick={()=> onClickingDelete(keg.id) }>Delete Keg</button> 
       <hr/>
     </React.Fragment>
@@ -16,7 +17,8 @@ function KegDetail(props){
 
 KegDetail.propTypes = {
   keg: PropTypes.object,
-  onClickingDelete: PropTypes.func
+  onClickingDelete: PropTypes.func,
+  onClickingEdit: PropTypes.func
 };
 
 export default KegDetail;
