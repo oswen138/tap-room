@@ -29,7 +29,8 @@ function KegList(props) {
     <React.Fragment>
       <hr/>
       {props.kegList.map((keg) =>
-        <Keg name={keg.name}
+        <Keg 
+          name={keg.name}
           brand={keg.brand}
           price={keg.price}
           alcoholContent={keg.alcoholContent}

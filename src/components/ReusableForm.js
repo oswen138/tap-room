@@ -5,7 +5,7 @@ function ReusableForm(props) {
 
   return (
     <React.Fragment>
-      <form onSubmit={handleNewKegFormSubmission}>
+      <form onSubmit={props.formSubmissionHandler}>
         <input
           type='text'
           name='name'

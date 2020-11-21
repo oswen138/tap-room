@@ -21,6 +21,7 @@ function EditKegForm (props) {
 }
 
 EditKegForm.propTypes = {
+  keg: PropTypes.object,
   onEditKeg: PropTypes.func
 };
 
