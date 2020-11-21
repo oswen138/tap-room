@@ -42,20 +42,3 @@ NewKegForm.propTypes = {
 export default NewKegForm;
 
 
-
-// let name = null;
-// let brand = null;
-// let price = null;
-// let alcoholContent = null;
-// let flavor = null;
-
-// function handleNewKegFormSubmission(event) {
-//   event.preventDefault();
-//   props.onNewKegCreation({name: name.value, brand: brand.value, price: price.value, alcoholContent: alcoholContent.value, flavor: flavor.value, id: v4()});
- 
-//   name.value='';
-//   brand.value='';
-//   price.value='';
-//   alcoholContent.value='';
-//   flavor.value='';
-// }
