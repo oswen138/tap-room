@@ -14,6 +14,7 @@ function NewKegForm(props){
       price: event.target.price.value, 
       alcoholContent: event.target.alcoholContent.value, 
       flavor: event.target.flavor.value, 
+      kegs: event.target.kegs.value,
       id: v4()});
   }
 
