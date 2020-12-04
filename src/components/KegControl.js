@@ -11,10 +11,10 @@ class KegControl extends React.Component {
     super(props);
     this.state = {
       masterKegList: [
-        {name: "Perky Pear", brand: "MousHaus", price: 3.50, alcoholContent: 3.5, flavor: "Pear-Ginger", kegs: 5, id: v4()},
-        {name: "Teary Berry", brand: "Biko Juices", price: 2.99, alcoholContent: 3.5, flavor: "Blueberry-Boysenberry", kegs: 8, id: v4()},
-        {name: "Savannah Dragon", brand: "MousHaus", price: 3.50, alcoholContent: 3.5, flavor: "Raspberry-lime", kegs: 10, id: v4()},
-        {name: "Loopy Strawberry", brand: "Biko Juices", alcoholContent: 3.5, price: 2.99, flavor: "Strawberry-Mint", kegs: 12, id: v4()}
+        {name: "Perky Pear", brand: "MousHaus", price: '3', alcoholContent: '5', flavor: "Pear-Ginger", kegs: 5, id: v4()},
+        {name: "Teary Berry", brand: "Biko Juices", price: '3', alcoholContent: '5', flavor: "Blueberry-Boysenberry", kegs: 8, id: v4()},
+        {name: "Savannah Dragon", brand: "MousHaus", price: '3', alcoholContent: '5', flavor: "Raspberry-lime", kegs: 10, id: v4()},
+        {name: "Loopy Strawberry", brand: "Biko Juices", price: '2.99', alcoholContent: '5', flavor: "Strawberry-Mint", kegs: 12, id: v4()}
       ],
       formVisibleOnPage: false,
       selectedKeg: null,
@@ -53,7 +53,7 @@ class KegControl extends React.Component {
     const newMasterKegList = this.state.masterKegList.filter(keg => keg.id !== id);
     this.setState({
       masterKegList: newMasterKegList,
-      selectedTicket: null
+      selectedKeg: null
     });
   }
 
@@ -66,7 +66,7 @@ class KegControl extends React.Component {
     this.setState({
         masterKegList: editedMasterKegList,
         editing: false,
-        selectedTicket: null
+        selectedKeg: null
       });
   }
 
@@ -86,9 +86,9 @@ class KegControl extends React.Component {
       currentlyVisibleState = <EditKegForm keg  = {this.state.selectedKeg} onEditKeg = {this.handleEditingKegInList} />
       buttonText = "Return to Keg List";
 
-    } else if (this.state.selectedTicket != null) {
-      currentlyVisibleState = 
-       <KegDetail keg = {this.state.selectedKeg} 
+    } else if (this.state.selectedKeg != null) {
+      currentlyVisibleState = <KegDetail 
+       keg = {this.state.selectedKeg} 
        onClickingDelete = {this.handleDeletingKeg}
        onClickingEdit = {this.handleEditClick} 
        onSoldKeg = {this.handleSoldKeg} />
@@ -98,11 +98,10 @@ class KegControl extends React.Component {
       currentlyVisibleState = <NewKegForm onNewKegCreation={this.handleAddingNewKegToList} />;
       buttonText = "Return to Keg List";
     } else {
-      currentlyVisibleState = 
-      <KegList kegList={this.state.masterKegList} 
-        onKegSelection={this.handleChangingSelectedKeg} 
-        />;
-      buttonText = "Add Keg"; 
+      currentlyVisibleState = <KegList 
+        kegList={this.state.masterKegList} 
+        onKegSelection={this.handleChangingSelectedKeg} />;
+        buttonText = "Add Keg"; 
     }
     return (
       <React.Fragment>
